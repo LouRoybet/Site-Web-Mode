@@ -1,0 +1,100 @@
+h1 {
+    color:color ="black";
+    font-size:70;
+    font-family: 'Lobster', cursive;
+    align-content: center;
+    
+}
+
+#main {
+  width: 600px;
+  margin: 0 auto; 
+}
+    
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size:24;
+    font-family: 'Nunito', sans-serif;     
+}
+
+img. { 
+margin-left: auto } 
+header {
+    background-color: #f8b0b0;   /*  couleur de fond */
+    height: 40px;                /* taille du bloc */
+    padding-top: 15px;           /* centrer */
+    padding-bottom: 20px;        /* centrer par rapport au texte */
+}
+
+ul body {
+    margin: #0;                   /* Pas de marge */
+    padding: #0;                
+}
+
+
+header a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;        /* Pas de décoration (souligné) */
+    
+}
+
+header li {
+    list-style: none;             /* Enlever le style de liste */
+    display: inline-block;        /* liens aligné */
+    width: 32%;                   /* centrer l'en-tête */
+}
+
+li {
+    font-family: 'Nunito', sans-serif ;
+    font-size: 12px;
+    list-style: none;
+        
+}
+
+
+header .active { 
+    background-color: #f2c2b4;        /* Bloc interactif et changement de couleur sur acceuil, parcours, contact*/
+    border-radius: 15px;
+}
+
+header .active { 
+    background-color: #f2c2b4;
+    border-radius: 20px;
+}
+
+header .active { 
+    background-color: #f2c2b4;
+    border-radius: 15%;
+}
+
+main {
+max-width:650px;
+margin-left:80px;
+margin-right: auto;
+
+}
+
+.image {
+    display: block;
+    width: 30%;
+    transition: all 1s ease;
+    
+}
+
+.image:hover {
+
+width: 50%; }
+
+.bob { 
+margin-right: 30%;
+background-color: #990a62;
+}
+
+.rotation {
+display: block;}
+
+.rotation:hover {
+    transform:scale(180deg);
+    width: 5%
+}
