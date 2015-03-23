@@ -1,3 +1,11 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 h1 {
     color:color ="black";
     font-size:70;
@@ -5,12 +13,7 @@ h1 {
     align-content: center;
     
 }
-
-#main {
-  width: 600px;
-  margin: 0 auto; 
-}
-    
+ 
 p{
     font-family: 'Nunito', sans-serif;
     font-size:24;
@@ -19,16 +22,17 @@ p{
 
 img. { 
 margin-left: auto } 
+
 header {
     background-color: #f8b0b0;   /*  couleur de fond */
-    height: 40px;                /* taille du bloc */
+    height: 75px;                /* taille du bloc */
     padding-top: 15px;           /* centrer */
     padding-bottom: 20px;        /* centrer par rapport au texte */
 }
 
-ul body {
-    margin: #0;                   /* Pas de marge */
-    padding: #0;                
+ul, body {
+    margin: 0;                   /* Pas de marge */
+    padding: 0;                
 }
 
 
@@ -36,13 +40,31 @@ header a {
     font-size: 30px;
     color: white;
     text-decoration: none;        /* Pas de décoration (souligné) */
-    
+}
+
+.content{
+    width:100%;
+    max-width:800px;
+    background-color:white;
+    margin: auto;
+    padding:30px;
+}
+
+.sidebar{
+    width:200px;
+    background:white;
+    position: fixed;
+    right:0;
+    height:100%;
+    top:75px;
 }
 
 header li {
     list-style: none;             /* Enlever le style de liste */
     display: inline-block;        /* liens aligné */
-    width: 32%;                   /* centrer l'en-tête */
+    width: 25%;                   /* centrer l'en-tête */
+    margin-right:-4px;
+    text-align: center;
 }
 
 li {
@@ -58,6 +80,7 @@ header .active {
     border-radius: 15px;
 }
 
+
 header .active { 
     background-color: #f2c2b4;
     border-radius: 20px;
@@ -66,13 +89,6 @@ header .active {
 header .active { 
     background-color: #f2c2b4;
     border-radius: 15%;
-}
-
-main {
-max-width:650px;
-margin-left:80px;
-margin-right: auto;
-
 }
 
 .image {
@@ -84,7 +100,7 @@ margin-right: auto;
 
 .image:hover {
 
-width: 50%; }
+width: 30%; }
 
 .bob { 
 margin-right: 30%;
@@ -97,4 +113,19 @@ display: block;}
 .rotation:hover {
     transform:scale(180deg);
     width: 5%
+}
+
+
+
+.boby { 
+    margin-top:20px;
+    margin-left: 70px;
+    margin-right:1000px;
+    text-align: justify;
+}
+
+.image-mode {
+    max-width: 100%;
+    display: block;
+    margin:auto;
 }
